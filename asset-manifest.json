@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/air_quality/static/css/main.c2d2c87d.chunk.css",
-    "main.js": "/air_quality/static/js/main.cd324fe7.chunk.js",
-    "main.js.map": "/air_quality/static/js/main.cd324fe7.chunk.js.map",
+    "main.css": "/air_quality/static/css/main.2b9b76c7.chunk.css",
+    "main.js": "/air_quality/static/js/main.3886f684.chunk.js",
+    "main.js.map": "/air_quality/static/js/main.3886f684.chunk.js.map",
     "runtime-main.js": "/air_quality/static/js/runtime-main.0adbc2f9.js",
     "runtime-main.js.map": "/air_quality/static/js/runtime-main.0adbc2f9.js.map",
     "static/css/2.4bb0786c.chunk.css": "/air_quality/static/css/2.4bb0786c.chunk.css",
-    "static/js/2.cf194930.chunk.js": "/air_quality/static/js/2.cf194930.chunk.js",
-    "static/js/2.cf194930.chunk.js.map": "/air_quality/static/js/2.cf194930.chunk.js.map",
+    "static/js/2.8fd49409.chunk.js": "/air_quality/static/js/2.8fd49409.chunk.js",
+    "static/js/2.8fd49409.chunk.js.map": "/air_quality/static/js/2.8fd49409.chunk.js.map",
     "index.html": "/air_quality/index.html",
-    "precache-manifest.f9108adbb59f88f1844cc36809af094b.js": "/air_quality/precache-manifest.f9108adbb59f88f1844cc36809af094b.js",
+    "precache-manifest.6bb6b79f6599ce8e6fd738e766889ca8.js": "/air_quality/precache-manifest.6bb6b79f6599ce8e6fd738e766889ca8.js",
     "service-worker.js": "/air_quality/service-worker.js",
     "static/css/2.4bb0786c.chunk.css.map": "/air_quality/static/css/2.4bb0786c.chunk.css.map",
-    "static/css/main.c2d2c87d.chunk.css.map": "/air_quality/static/css/main.c2d2c87d.chunk.css.map",
-    "static/js/2.cf194930.chunk.js.LICENSE.txt": "/air_quality/static/js/2.cf194930.chunk.js.LICENSE.txt",
+    "static/css/main.2b9b76c7.chunk.css.map": "/air_quality/static/css/main.2b9b76c7.chunk.css.map",
+    "static/js/2.8fd49409.chunk.js.LICENSE.txt": "/air_quality/static/js/2.8fd49409.chunk.js.LICENSE.txt",
     "static/media/HeroBlock.scss": "/air_quality/static/media/bgImg_header.f9ea7350.jpg",
     "static/media/east_logo.svg": "/air_quality/static/media/east_logo.8dd4ef71.svg",
     "static/media/gc_logo.svg": "/air_quality/static/media/gc_logo.e60be19e.svg",
@@ -33,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.0adbc2f9.js",
     "static/css/2.4bb0786c.chunk.css",
-    "static/js/2.cf194930.chunk.js",
-    "static/css/main.c2d2c87d.chunk.css",
-    "static/js/main.cd324fe7.chunk.js"
+    "static/js/2.8fd49409.chunk.js",
+    "static/css/main.2b9b76c7.chunk.css",
+    "static/js/main.3886f684.chunk.js"
   ]
 }
