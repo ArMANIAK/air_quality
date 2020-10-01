@@ -64,3 +64,25 @@ section.facts > .swiper-button-disabled {
 p.facts-slide-key {
     display: none;
 }
+
+@media screen and (max-width: 425px) {
+    .facts {
+        padding: 50px 60px;
+    
+        &-title {
+            font-size: 27px;
+            line-height: 32px;
+        }
+    
+        &-slide {
+    
+            width: 275px;
+    
+            &-paragraph {
+                margin-top: 20px;
+                font-size: 17px;
+                line-height: 20px;
+            }
+        }
+    }
+}

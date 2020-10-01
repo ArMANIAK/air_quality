@@ -5,7 +5,7 @@ const Footer = ( {links, logos} ) => {
     const logoImages = logos.map((el, index) => <img className='footer-partners-logo' src={el} alt="partner logo" key={index}/>);
     const navMenu = links.map((el, index) => <a className='footer-middle-navigation-item' href={el.href} key={index}>{el.title}</a>);
     return (
-        <section id="footer" className="footer container">
+        <section id="footer" className="footer">
             <div className="footer-partners">
                 { logoImages }
             </div>

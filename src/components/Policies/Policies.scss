@@ -1,5 +1,9 @@
 .policies {
-    padding: 50px 0;
+    padding: 50px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
     &-title {
         text-align: center;
@@ -20,6 +24,7 @@
     }
 
     &-cards {
+        max-width: 1312px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -32,11 +37,11 @@
         position: relative;
         display: flex;
         align-items: center;
-        width: calc(33% - 70px);
+        width: calc(33% - 39px);
         margin: 20px;
 
         &-image {
-            height: 240px;
+            width: 100%;
         }
 
         &-title {
@@ -69,23 +74,68 @@
             animation: fadeIn 0.5s;
         }
 
+        &:nth-child(3n) &-tooltip {
+            left: -120%;
+            clip-path: polygon(0 0, 0 100%, 490px 100%, 100% 50%, 490px 0);
+            padding: 16px 60px 16px 16px;
+            
+        }
     }
-    
 }
 
-.policy-card:nth-child(3n) .policy-card-tooltip {
-    left: -120%;
-    clip-path: polygon(0 0, 0 100%, 490px 100%, 100% 50%, 490px 0);
-    padding: 16px 60px 16px 16px;
-
-}
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
     }
-
+    
     100% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .policies {
+        padding: 30px 20px;
+    
+        &-title {
+            font-size: 27px;
+            line-height: 32px;
+            margin-bottom: 30px;
+        }
+    
+        &-subtitle {
+            display: none;
+        }
+    
+        &-cards {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+    }
+
+    .policy {
+
+        &-card {
+            flex-direction: column;
+            margin: 10px;
+            width: 82vw;
+            
+            &:nth-child(n) &-tooltip {
+                position: absolute; 
+                padding: 16px;
+                top: 0;
+                left: 0;
+                width: calc(82vw - 32px);
+                clip-path: none;
+                background-color: #DADADA;
+                z-index: 1;
+                animation: fadeIn 0.5s;
+            }
+        }
+
     }
 }

@@ -27,18 +27,16 @@ const MapBlock = ({title, capture}) => {
         });
 
     return(
-        <section className='map'>
-            <div className='container'>
-                <h2 className='map-title'>
-                    { title }
-                </h2>
-                <div className="map-container">
-                    <div ref={mapContainer} className="mapContainer" />
-                </div>
-                <p className="map-capture">
-                    { capture }
-                </p>
+        <section className='map' id="map">
+            <h2 className='map-title'>
+                { title }
+            </h2>
+            <div className="map-container">
+                <div ref={mapContainer} className="mapContainer" />
             </div>
+            <p className="map-capture">
+                { capture }
+            </p>
         </section>
     )
 };

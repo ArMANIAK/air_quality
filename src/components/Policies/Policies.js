@@ -13,11 +13,10 @@ const Policies = ({title, subtitle, cards}) => {
     );
 
     return(
-        <section className="policies container">
+        <section className="policies" id="policy">
             <h2 className="policies-title">{title}</h2>
             <h4 className="policies-subtitle">{subtitle}</h4>
             <div className='policies-cards'>{policyCards}</div>
-            
         </section>
     )
 }

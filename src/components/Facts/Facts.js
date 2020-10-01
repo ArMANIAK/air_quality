@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import './Facts.scss';
 import SwiperCore, { Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useScreenSize } from '../../helpers/Resize';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
@@ -9,6 +10,7 @@ import 'swiper/components/pagination/pagination.scss';
 SwiperCore.use([Pagination, Navigation]);
 
 const Facts = ({title, slides}) => {
+    const winSize = useScreenSize();
     const cards = slides.map((el, index) => 
         <SwiperSlide className="facts-slide" key={index}>
             <img className='facts-slide-img' src={el.image} alt={el.description}/>
@@ -16,7 +18,7 @@ const Facts = ({title, slides}) => {
             <p className="facts-slide-key">{el.id}</p>
         </SwiperSlide>);
     return(
-        <section className='facts container'>
+        <section className='facts' id="facts">
             <h2 className='facts-title'> { title }</h2>
             <div className="swiper-button-prev"/>
             <Swiper
@@ -32,8 +34,8 @@ const Facts = ({title, slides}) => {
                     prevEl: '.swiper-button-prev'
                 }}
                 spaceBetween={40}
-                slidesPerView={3}
-                slidesPerGroup={3}>
+                slidesPerView={ winSize > 425 ? 3 : 1 }
+                slidesPerGroup={ winSize > 425 ? 3 : 1 }>
                 {cards}
             </Swiper>
             <div className="swiper-button-next"/>

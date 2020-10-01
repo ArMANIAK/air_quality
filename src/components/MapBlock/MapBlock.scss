@@ -1,6 +1,6 @@
 .map {
 
-    padding: 100px 0;
+    padding: 50px 90px;
 
     &-title {
         font-weight: normal;
@@ -28,4 +28,33 @@
 
 .mapContainer {
     height: 560px;
+}
+
+@media screen and (max-width: 425px) {
+    .map {
+
+        padding: 35px 20px;
+    
+        &-title {
+            font-size: 27px;
+            line-height: 32px;
+        }
+    
+        &-container {
+            margin: 20px 15px;
+    
+            & > * {
+                height: 90%;
+            }
+        }
+    
+        &-capture {
+            font-size: 17px;
+            line-height: 20px;
+        }
+    }
+    
+    .mapContainer {
+        height: 560px;
+    }
 }
