@@ -151,14 +151,58 @@
             display: inline-block;
             width: 35px;
             height: 35px;
-            margin-top: 28vh;
+            margin-top: 25vh;
             border-right: 2px solid #fff;
             border-bottom: 2px solid #FFF;
             transform: rotate(45deg);
+            animation: arrow 0.7s infinite;
         }
     }
     .hero > .container {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@keyframes arrow {
+    from {
+        opacity: 1;
+    }
+
+    29% {
+        opacity: 1;
+        margin-top: 25vh;
+    }
+    30% {
+        opacity: 0;
+    }
+
+    34% {
+        opacity: 0;
+        margin-top: 26vh;
+    }
+    35% {
+        opacity: 1;
+    }
+    64% {
+        opacity: 1;
+    }
+    65% {
+        margin-top: 26vh;
+        opacity: 0;
+    }
+    68% {
+        margin-top: 27vh;
+        opacity: 0;
+    }
+    69% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    to {
+        margin-top: 27vh;
+        opacity: 0;
     }
 }
