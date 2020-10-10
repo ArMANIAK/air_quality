@@ -107,7 +107,7 @@
 
                 &-X, &-hamIcon {
                     display: block;
-                    font-weight: bolder;
+                    font-weight: normal;
                     font-size: 40px;
                     color: #FFF;
                 }
@@ -138,7 +138,7 @@
 
         &-link {
             position: absolute;
-            top: 650px;
+            top: 78vh;
             left: 0px;
             padding: 24px calc((100vw - 140px)/2);
             font-size: 28px;
@@ -151,7 +151,7 @@
             display: inline-block;
             width: 35px;
             height: 35px;
-            margin-top: 240px;
+            margin-top: 28vh;
             border-right: 2px solid #fff;
             border-bottom: 2px solid #FFF;
             transform: rotate(45deg);
