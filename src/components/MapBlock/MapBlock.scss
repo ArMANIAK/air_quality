@@ -33,7 +33,7 @@
 @media screen and (max-width: 425px) {
     .map {
 
-        padding: 35px 20px;
+        padding: 35px 0;
     
         &-title {
             font-size: 27px;
@@ -41,7 +41,7 @@
         }
     
         &-container {
-            margin: 20px 15px;
+            margin: 20px 0;
     
             & > * {
                 height: 90%;

@@ -8,7 +8,7 @@ export const useScreenSize = () => {
     window.addEventListener('resize', handleResize);
     console.log(winSize);
     return () => window.removeEventListener('resize', handleResize);
-  }, [])
+  }, [winSize])
   
   return winSize;
 };

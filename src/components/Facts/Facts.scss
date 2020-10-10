@@ -1,7 +1,6 @@
 .facts {
     padding: 100px 60px 50px;
     position: relative;
-    box-sizing: border-box;
 
     &-title {
         text-align: center;
@@ -47,17 +46,17 @@
     }
 }
 
-.facts > .swiper-button-prev {
+.facts .swiper-button-prev {
     color: #B78A3F;
     left: 10px;
 }
 
-.facts > .swiper-button-next {
+.facts .swiper-button-next {
     color: #B78A3F;
     right: 10px;
 }
 
-section.facts > .swiper-button-disabled {
+section.facts .swiper-button-disabled {
     opacity: 0;
 }
 
@@ -67,7 +66,7 @@ p.facts-slide-key {
 
 @media screen and (max-width: 425px) {
     .facts {
-        padding: 50px 60px;
+        padding: 50px 20px;
     
         &-title {
             font-size: 27px;
@@ -84,5 +83,13 @@ p.facts-slide-key {
                 line-height: 20px;
             }
         }
+    }
+
+    .facts .swiper-button-prev {
+        left: 25px;
+    }
+    
+    .facts .swiper-button-next {
+        right: 25px;
     }
 }

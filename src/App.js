@@ -8,8 +8,10 @@ import itn_logo from './assets/itn_logo.svg';
 import east_logo from './assets/east_logo.svg';
 import gc_logo from './assets/gc_logo.svg';
 import Facts from './components/Facts/Facts';
+import { useScreenSize } from './helpers/Resize';
 
 function App() {
+  const winSize = useScreenSize();
   const partners = [east_logo, itn_logo, gc_logo];
   const title = 'Качество атмосферного воздуха и здоровье';
   const navLinks = [
@@ -98,9 +100,11 @@ function App() {
     <>
       <HeroBlock title = { title }
                   logos = { partners }
-                  links = { navLinks } />
+                  links = { navLinks } 
+                  winSize = { winSize }/>
       <Facts title = { 'Основные факты' }
-              slides = { slides } />
+              slides = { slides }
+              winSize = { winSize } />
       <MapBlock title = { 'Индекс качества воздуха в режиме реального времени' }
                 capture = { 'Для того чтобы узнать уровень загрязнения атмосферного воздуха (качество воздуха) в городе Киев, необходимо выбрать соответствующую станцию мониторинга на карте выше.' } />
       <Policies title = { 'Политика по уменьшению загрязнений' }
