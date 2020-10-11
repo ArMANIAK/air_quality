@@ -1,8 +1,7 @@
-import React, { useEffect, useState }  from 'react';
+import React from 'react';
 import './Facts.scss';
 import SwiperCore, { Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useScreenSize } from '../../helpers/Resize';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
@@ -34,9 +33,10 @@ const Facts = ({title, slides, winSize}) => {
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev'
                     }}
-                    spaceBetween={40}
-                    slidesPerView={ winSize > 425 ? 3 : 1 }
-                    slidesPerGroup={ winSize > 425 ? 3 : 1 }>
+                    breakpoints={{
+                        320: {slidesPerView: 1, slidesPerGroup: 1, centeredSlides: true},
+                        426: {slidesPerView: 3, slidesPerGroup: 3, spaceBetween: 40}
+                    }}>
                     {cards}
                 </Swiper>
                 <div className="swiper-button-next"/>
